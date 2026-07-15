@@ -138,6 +138,73 @@ h1, h2, .subtitle {
   transform: translateY(-2px);
 }
 
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 8vw;
+  background: linear-gradient(180deg, #141414 0%, #0a0a0a 100%);
+  border-top: 3px solid #c81e1e;
+}
+
+.connect h2 {
+  font-size: 2.4rem;
+  color: #c81e1e;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #141414;
+  border: 2px solid #c81e1e;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.social-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: #f0f0f0;
+  transition: fill 0.15s ease;
+}
+
+.social-btn:hover {
+  background: #c81e1e;
+  transform: translateY(-2px);
+}
+
+.social-btn:hover svg {
+  fill: #ffffff;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.9rem 2.4rem;
+  background: #c81e1e;
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(200,30,30,0.35);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.contact-btn:hover {
+  background: #e02424;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 640px) {
   .hero {
     flex-direction: column;
